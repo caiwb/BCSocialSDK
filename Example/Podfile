@@ -2,5 +2,8 @@
 
 target 'BCSocialSDK_Example' do
   pod 'BCSocialSDK', :path => '../'
-
+  pod 'BCWechatShareActivity', :git => 'https://github.com/caiwb/BCWechatShareActivity.git'
+  pod 'BCQQShareActivity', :git => 'https://github.com/caiwb/BCQQShareActivity.git'
+  pod 'BCWeiboShareActivity', :git => 'https://github.com/caiwb/BCWeiboShareActivity.git'
+  
 end

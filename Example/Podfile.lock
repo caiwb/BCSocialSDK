@@ -1,14 +1,73 @@
 PODS:
-  - BCSocialSDK (0.1.0)
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking+SingleBlock (0.0.1):
+    - AFNetworking (~> 2.0)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - BCQQShareActivity (0.1.0)
+  - BCSocialSDK (0.1.0):
+    - BCQQShareActivity
+    - BCWechatShareActivity
+    - BCWeiboShareActivity
+  - BCWechatShareActivity (0.1.0):
+    - AFNetworking (~> 2.3)
+    - AFNetworking+SingleBlock
+    - JSONModel
+  - BCWeiboShareActivity (0.1.0)
+  - JSONModel (1.2.0)
 
 DEPENDENCIES:
+  - BCQQShareActivity (from `https://github.com/caiwb/BCQQShareActivity.git`)
   - BCSocialSDK (from `../`)
+  - BCWechatShareActivity (from `https://github.com/caiwb/BCWechatShareActivity.git`)
+  - BCWeiboShareActivity (from `https://github.com/caiwb/BCWeiboShareActivity.git`)
 
 EXTERNAL SOURCES:
+  BCQQShareActivity:
+    :git: https://github.com/caiwb/BCQQShareActivity.git
   BCSocialSDK:
     :path: ../
+  BCWechatShareActivity:
+    :git: https://github.com/caiwb/BCWechatShareActivity.git
+  BCWeiboShareActivity:
+    :git: https://github.com/caiwb/BCWeiboShareActivity.git
+
+CHECKOUT OPTIONS:
+  BCQQShareActivity:
+    :commit: 61e776857c3605e2c653fbccd0a1d67c8ada492c
+    :git: https://github.com/caiwb/BCQQShareActivity.git
+  BCWechatShareActivity:
+    :commit: 929fb6fdb298fd0b6a4e08b16c9b2ad4b0c83901
+    :git: https://github.com/caiwb/BCWechatShareActivity.git
+  BCWeiboShareActivity:
+    :commit: 704108ee55499d0161511348d2a894a349681e2f
+    :git: https://github.com/caiwb/BCWeiboShareActivity.git
 
 SPEC CHECKSUMS:
-  BCSocialSDK: 788bb4c21e747040d459d1f0171493f3e35ec8d1
+  AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
+  AFNetworking+SingleBlock: e736a3faeb61df7ec272c505ec4aa5de73e2b3ae
+  BCQQShareActivity: 4e7b258469f6a62905f1ef3768e073c1b87039eb
+  BCSocialSDK: 244c15169fbc3ab219985eaff666459686fa9bdf
+  BCWechatShareActivity: ff0256900bafdbe86b4e9921379b2e62828b7856
+  BCWeiboShareActivity: 6e0fdfc857a5c4d4432d89865030d19a09a70ef9
+  JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
 
 COCOAPODS: 0.39.0
