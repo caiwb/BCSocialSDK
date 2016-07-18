@@ -1,0 +1,14 @@
+PODS:
+  - BCSocialSDK (0.1.0)
+
+DEPENDENCIES:
+  - BCSocialSDK (from `../`)
+
+EXTERNAL SOURCES:
+  BCSocialSDK:
+    :path: ../
+
+SPEC CHECKSUMS:
+  BCSocialSDK: 788bb4c21e747040d459d1f0171493f3e35ec8d1
+
+COCOAPODS: 0.39.0

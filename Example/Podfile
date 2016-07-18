@@ -1,0 +1,6 @@
+#use_frameworks!
+
+target 'BCSocialSDK_Example' do
+  pod 'BCSocialSDK', :path => '../'
+
+end
