@@ -30,6 +30,8 @@
 
 - (void)loginOnType:(BCSocialLoginType)type withCompleteBlock:(void(^)(BOOL suc, NSString *accessToken, NSString *openId, NSString *errMsg))complete
 {
+    NSParameterAssert(complete);
+    
     switch (type)
     {
         case BCWechat:
@@ -45,6 +47,74 @@
         case BCQQ:
         {
             [BCQQLoginProvider loginWithCompleteBlock:complete];
+        }
+            break;
+        default:
+            break;
+    }
+}
+
+- (void)getUserInfo:(BCSocialLoginType)type withCompleteBlock:(void (^)(BOOL, BCUser *))complete
+{
+    NSParameterAssert(complete);
+    
+    switch (type)
+    {
+        case BCWechat:
+        {
+            [BCWXLoginProvider getUserInfoWithCompleteBlock:^(BOOL suc, BCWXUserInfo *userInfo) {
+                
+                if (suc)
+                {
+                    BCUser *user = [BCUser new];
+                    user.name = userInfo.nickname;
+                    user.avatar = userInfo.headimgurl;
+                    
+                    complete(YES, user);
+                }
+                else
+                {
+                    complete(NO, nil);
+                }
+            }];
+        }
+            break;
+        case BCWeibo:
+        {
+            [BCWBLoginProvider getUserInfoWithCompleteBlock:^(BOOL suc, WeiboUser *userInfo) {
+                
+                if (suc)
+                {
+                    BCUser *user = [BCUser new];
+                    user.name = userInfo.name;
+                    user.avatar = userInfo.avatarLargeUrl;
+                    
+                    complete(YES, user);
+                }
+                else
+                {
+                    complete(NO, nil);
+                }
+            }];
+        }
+            break;
+        case BCQQ:
+        {
+            [BCQQLoginProvider getUserInfoWithCompleteBlock:^(BOOL suc, BCQQUserInfo *userInfo) {
+                
+                if (suc)
+                {
+                    BCUser *user = [BCUser new];
+                    user.name = userInfo.nickName;
+                    user.avatar = userInfo.avatar;
+                    
+                    complete(YES, user);
+                }
+                else
+                {
+                    complete(NO, nil);
+                }
+            }];
         }
             break;
         default:

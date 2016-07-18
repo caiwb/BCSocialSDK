@@ -17,6 +17,9 @@ typedef NS_OPTIONS(NSUInteger, BCSocialLoginType)
 
 @interface BCUser : NSObject
 
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *avatar;
+
 @end
 
 
