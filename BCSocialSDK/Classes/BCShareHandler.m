@@ -9,7 +9,6 @@
 #import <objc/runtime.h>
 
 #import "BCShareHandler.h"
-#import "BCShareObject.h"
 #import "BCLoginHandler.h"
 #import "BCShareView.h"
 

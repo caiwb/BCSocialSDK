@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@class BCShareObject;
+#import "BCShareObject.h"
 
 typedef NS_OPTIONS(NSUInteger, BCSocialShareType)
 {
-    QQ_SESSION,
-    QQ_ZONE,
-    WEIBO,
-    WECHAT_SESSION,
-    WECHAT_TIMELINE
+    QQ_SESSION = 0,
+    QQ_ZONE = 1,
+    WEIBO = 2,
+    WECHAT_SESSION = 3,
+    WECHAT_TIMELINE = 4
 };
 
 @interface BCShareHandler : NSObject

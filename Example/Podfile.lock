@@ -34,12 +34,14 @@ PODS:
     - JSONModel
   - BCWeiboShareActivity (0.1.0)
   - JSONModel (1.2.0)
+  - SinaActivity (1.0.1)
 
 DEPENDENCIES:
   - BCQQShareActivity (from `https://github.com/caiwb/BCQQShareActivity.git`)
   - BCSocialSDK (from `../`)
   - BCWechatShareActivity (from `https://github.com/caiwb/BCWechatShareActivity.git`)
   - BCWeiboShareActivity (from `https://github.com/caiwb/BCWeiboShareActivity.git`)
+  - SinaActivity (from `https://gitlab.corp.youdao.com/luna-ios-framework/sinaactivity.git`)
 
 EXTERNAL SOURCES:
   BCQQShareActivity:
@@ -50,25 +52,31 @@ EXTERNAL SOURCES:
     :git: https://github.com/caiwb/BCWechatShareActivity.git
   BCWeiboShareActivity:
     :git: https://github.com/caiwb/BCWeiboShareActivity.git
+  SinaActivity:
+    :git: https://gitlab.corp.youdao.com/luna-ios-framework/sinaactivity.git
 
 CHECKOUT OPTIONS:
   BCQQShareActivity:
-    :commit: 4723e8b562b99bc519bcdf6f270a2639af9dd773
+    :commit: 04bc10b6bb5630c7144ecb1c3676f6a6cab121b8
     :git: https://github.com/caiwb/BCQQShareActivity.git
   BCWechatShareActivity:
-    :commit: ae6e7651df633aa2a49e0a7733f8ed19ba5cc288
+    :commit: 4e1f9fd64f67fc5a3f4f55204c0ddf862bd6d5b2
     :git: https://github.com/caiwb/BCWechatShareActivity.git
   BCWeiboShareActivity:
-    :commit: 9a2f0f9f09bfe20376d4a35aedcdbe4b70fa73b7
+    :commit: 6dde936d3bfbf182c1347267ae8bfaa1499f0ee4
     :git: https://github.com/caiwb/BCWeiboShareActivity.git
+  SinaActivity:
+    :commit: 239680cd8e1909c765fb649b82fb8a7c5768c4bf
+    :git: https://gitlab.corp.youdao.com/luna-ios-framework/sinaactivity.git
 
 SPEC CHECKSUMS:
   AFNetworking: cb8d14a848e831097108418f5d49217339d4eb60
   AFNetworking+SingleBlock: e736a3faeb61df7ec272c505ec4aa5de73e2b3ae
-  BCQQShareActivity: 9319420d35c2f0dfcb16ca4c77cf3087fb4bdf7d
-  BCSocialSDK: 244c15169fbc3ab219985eaff666459686fa9bdf
+  BCQQShareActivity: 64179d0df86dd11646060ed8d0701197d7a32f5a
+  BCSocialSDK: d1688cdc48ab9996268b248c3cacf9b6f791a1c9
   BCWechatShareActivity: 235f7f5159c9e85e292ca29577b37c7c501a0422
   BCWeiboShareActivity: 6e0fdfc857a5c4d4432d89865030d19a09a70ef9
   JSONModel: 12523685c4b623553ccf844bbbf7007624317b2c
+  SinaActivity: 1ac77d614db66dfd5305a12eb8f5b27709fb6d40
 
 COCOAPODS: 0.39.0

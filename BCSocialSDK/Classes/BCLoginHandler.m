@@ -16,6 +16,10 @@
 #import <BCWechatShareActivity/BCWXSocialHandler.h>
 #import <BCQQShareActivity/BCQQSocialHandler.h>
 
+@implementation BCUser
+
+@end
+
 @implementation BCLoginHandler
 
 + (instancetype)sharedInstance

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		39BAA7941D47DB3800E95E7D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 39BAA7931D47DB3800E95E7D /* LaunchScreen.storyboard */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -33,6 +34,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		39BAA7931D47DB3800E95E7D /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44F6968214D4495B756A4780 /* Pods-BCSocialSDK_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BCSocialSDK_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-BCSocialSDK_Example/Pods-BCSocialSDK_Example.release.xcconfig"; sourceTree = "<group>"; };
 		562F5CC2B0A033FC47E68923 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		6003F58A195388D20070C39A /* BCSocialSDK_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BCSocialSDK_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -128,7 +130,6 @@
 			children = (
 				6003F59C195388D20070C39A /* BCAppDelegate.h */,
 				6003F59D195388D20070C39A /* BCAppDelegate.m */,
-				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
 				6003F5A5195388D20070C39A /* BCViewController.h */,
 				6003F5A6195388D20070C39A /* BCViewController.m */,
 				6003F5A8195388D20070C39A /* Images.xcassets */,
@@ -141,6 +142,8 @@
 		6003F594195388D20070C39A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
+				39BAA7931D47DB3800E95E7D /* LaunchScreen.storyboard */,
 				6003F595195388D20070C39A /* BCSocialSDK-Info.plist */,
 				6003F596195388D20070C39A /* InfoPlist.strings */,
 				6003F599195388D20070C39A /* main.m */,
@@ -240,6 +243,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				873B8AEB1B1F5CCA007FD442 /* Main.storyboard in Resources */,
+				39BAA7941D47DB3800E95E7D /* LaunchScreen.storyboard in Resources */,
 				6003F5A9195388D20070C39A /* Images.xcassets in Resources */,
 				6003F598195388D20070C39A /* InfoPlist.strings in Resources */,
 			);
@@ -420,7 +424,6 @@
 			baseConfigurationReference = EA8C072191DD5F1F559F3595 /* Pods-BCSocialSDK_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BCSocialSDK/BCSocialSDK-Prefix.pch";
 				INFOPLIST_FILE = "BCSocialSDK/BCSocialSDK-Info.plist";
@@ -436,7 +439,6 @@
 			baseConfigurationReference = 44F6968214D4495B756A4780 /* Pods-BCSocialSDK_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "BCSocialSDK/BCSocialSDK-Prefix.pch";
 				INFOPLIST_FILE = "BCSocialSDK/BCSocialSDK-Info.plist";

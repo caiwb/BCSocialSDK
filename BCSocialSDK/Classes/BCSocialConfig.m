@@ -25,7 +25,7 @@
     [[BCQQSocialHandler sharedInstance] setQQAppId:appId];
 }
 
-+ (void)setSinaAppKey:(NSString *)appKey redirectURL:(NSString *)redirectURI
++ (void)setWBAppKey:(NSString *)appKey redirectURI:(NSString *)redirectURI
 {
     [BCLoginHandler sharedInstance].setWBSuc = [[BCWBSocialHandler sharedInstance] setWBAppKey:appKey redirectURI:redirectURI];
 }

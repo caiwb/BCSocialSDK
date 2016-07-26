@@ -7,6 +7,7 @@
 //
 
 #import "BCViewController.h"
+#import "BCSocialSDK.h"
 
 @interface BCViewController ()
 
@@ -14,16 +15,18 @@
 
 @implementation BCViewController
 
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    BCShareWebObject *obj = [BCShareWebObject new];
+    obj.title = @"title";
+    obj.text = @"text";
+    obj.thumbImage = [UIImage new];
+    obj.webUrl = @"webUrl";
+    
+    [BCShareHandler shareObjectByBCShareView:obj];
 }
 
 @end
