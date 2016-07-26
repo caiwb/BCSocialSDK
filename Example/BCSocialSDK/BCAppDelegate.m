@@ -20,7 +20,10 @@
 
 - (void)setupAppKeys
 {
+#if TARGET_IPHONE_SIMULATOR
+#else
     [BCSocialConfig setQQAppId:@"QQAppId"];
+#endif
     [BCSocialConfig setWXAppId:@"WXAppId" appSecret:@"WXAppSecret"];
     [BCSocialConfig setWBAppKey:@"WBAppKey" redirectURI:@"WBRedirectURI"];
 }
